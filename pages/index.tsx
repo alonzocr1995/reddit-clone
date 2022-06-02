@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           <p className="text-md mb-1 p-4 pb-3 font-bold">Top Communities</p>
           <div>
             {/*subreddit list */}
-            {subreddits.map((subreddit, i) => (
+            {subreddits?.map((subreddit, i) => (
               <RowSubreddit
                 key={subreddit.id}
                 topic={subreddit.topic}
